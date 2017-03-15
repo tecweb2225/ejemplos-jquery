@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Click</title>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <button class="boton">Boton 1</button>
+    <button class="boton">Boton 2</button>
+    <button class="boton">Boton 3</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a laboriosam, blanditiis fuga nostrum? Velit esse, quibusdam laudantium. Officia nemo delectus aspernatur, voluptatibus dolorum illo architecto suscipit quidem eum error.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a laboriosam, blanditiis fuga nostrum? Velit esse, quibusdam laudantium. Officia nemo delectus aspernatur, voluptatibus dolorum illo architecto suscipit quidem eum error.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed a laboriosam, blanditiis fuga nostrum? Velit esse, quibusdam laudantium. Officia nemo delectus aspernatur, voluptatibus dolorum illo architecto suscipit quidem eum error.
+        </p>
+    <script>
+        $(function(){
+            $('.boton').click(function(){
+                $(this).slideUp()
+            })
+            $('.boton').dblclick(function() {
+                $(this).hide()
+            })
+            $('p').mouseenter(function(){
+                $(this).css('color','red')
+            })
+            $('p').mouseleave(function(){
+                $(this).css('color','black')
+            })
+        })
+
+    </script>
+</body>
+</html>
